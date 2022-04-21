@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "VK Sans";
+    src: url("/fonts/VK_Sans_Display_Medium.woff2") format("woff2"),
+           url("/fonts/VK_Sans_Display_Regular.woff2") format("woff2");
+   }
+* {
+    font-family: "VK Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.content {
+    display: flex;
+    border: 1px solid #e1e3e6;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 448px;
+}
+.content .info {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    background-color: #F9F9F9;
+    width: 360px;
+}
+.vk_id_logo img {
+    height: 20px;
+    margin-right: 3px;
+}
+.content .info ul {
+    list-style: none;
+}
+.content .info ul li {
+    display: flex;
+    margin: 0px 0px 2px 0px;
+    padding: 8px 0px;
+    align-items: center;
+}
+.content .info span {
+    color: #6d7885;
+    font-size: 15px;
+    /* margin-left: 12px; */
+}
+.content .info ul li:nth-child(3) {
+    width: calc(100% - 11px);
+}
+.vk_id_logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.vk_id_auth_title {
+    font-family: VK Sans Display,-apple-system,system-ui,Helvetica Neue,Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 12px 0px 18px 0px;
+    width: calc(100% - 60px);
+}
+.content .info svg {
+    color: #99a2ad;
+    height: 28px;
+    width: 35px;
+}
+.content .info .icon {
+    color: #99a2ad;
+    height: 28px;
+    width: 28px;
+    margin-right: 12px;
+}
+.login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 360px;
+    padding: 28px 28px 20px;
+
+}
+.login_block {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.login_block.selected {
+    display: flex;
+}
+.enter, .continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.enter_icon img {
+    margin: 12px 0px;
+    width: 48px;
+}
+.enter_caption {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.enter_subcaption {
+    text-align: center;
+    color: #818c99;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.enter_subcaption span {
+    color: #000;
+}
+.input_block {
+    position: relative;
+    width: 100%;
+}
+.input_block button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    position: absolute;
+    border: unset;
+    background-color: unset;
+}
+.input_block button svg {
+    color: #99a2ad;
+}
+.back_to {
+    cursor: pointer;
+    top: -23px;
+    left: -23px;
+    position: absolute;
+    background-color: unset;
+    border: unset;
+    width: 48px;
+    height: 48px;
+}
+.back_to svg {
+    color: #99a2ad;
+}
+
+.enter input {
+    width: 100%;
+    font-size: 15px;
+    height: 40px;
+    padding: 0px 42px 0px 12px;
+    background-color: #F2F3F5;
+    border: 1px solid #e1e3e6;
+    border-radius: 8px;
+    outline: none;
+}
+.enter input:hover {
+    border-color: #c4c8cc;
+}
+.enter input:focus   {
+    border-color: #4986CC;
+}
+.reset_password {
+    margin-top: 8px;
+    color: #4986cc;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: start;
+    width: 100%;
+}
+.reset_password:hover {
+    text-decoration: underline;
+}
+.continue button {
+    opacity: .4;
+    transition: all .1s ease-out;
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #4986CC;
+    border: unset;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.continue button.active {
+    opacity: 1;
+    cursor: pointer;
+
+}
+.continue button.active:hover {
+    opacity: .9;
+}
+.description {
+    margin-top: 16px;
+    width: 110%;
+    color:#99a2ad;
+    font-size: 11px;
+}
+.description p {
+    line-height: 14px;
+    text-align: center;
+}
+.description p a {
+    color: #6d7885;
+    text-decoration: none;
+}
+.description p a:hover {
+    text-decoration: underline;
+}
